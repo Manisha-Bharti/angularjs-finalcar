@@ -1,3 +1,153 @@
 h1, p {
   font-family: Lato;
 }
+
+#app{
+	opacity:1;
+}
+	   
+ @font-face {
+    font-family: myFirstFont;
+    src: url(CREMONA.TTF);
+}
+
+#upperBanner{
+    background-image: url('Img/green_back.png'); 
+    width:100%;
+}
+
+#flexDiv{
+    display: flex;
+    flex-direction: row; 
+    height: 100%;
+}
+
+#message1{
+   color: rgb(202,220,79); 
+   font-size: 32px; 
+   font-family:myFirstFont;
+   width: 90%;
+}
+   
+#myImage1{
+   width:15%; 
+   height:100%;
+}
+   
+#myImage2{
+   width:20%;height:100%;
+   margin-left: -260px;
+   margin-top: -32px;
+}
+   
+#myImage3 {
+    width:20%; height:20%;
+    position: absolute;
+    padding-left: 248px;
+    padding-top: 121px;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+	 animation-name: example;
+    -webkit-animation-duration: 600ms; /* Chrome, Safari, Opera */
+   -webkit-animation-fill-mode: forwards;
+    animation-duration: 600ms;
+}
+   
+ #lowerBanner{
+   background-color :rgb(70,130,180) ; 
+   width:100%;
+}
+
+@keyframes example {
+   0%   {-webkit-transform:  rotate(+1deg) scale(0,0);}
+	25%   {-webkit-transform:  rotate(+4deg) scale(.25,.25);}
+	50%   {-webkit-transform:  rotate(+5deg) scale(.5,.5);}
+	75%   {-webkit-transform:  rotate(+5deg) scale(.75,.75);}
+	85%   {-webkit-transform:  rotate(+3deg) scale(.85,.85);}
+	95%   {-webkit-transform:  rotate(+1deg) scale(.95,.95);}
+   100% {-webkit-transform:  rotate(0deg) scale(1,1);}
+}
+
+.fade {
+    font-family:myFirstFont;
+	color:rgb(255,255,255);
+	text-align:center;
+	font-size: 32px;
+    position: relative;
+	-webkit-animation: fadein 2s;
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#arrow {
+-moz-transition:all 1s ease-in-out;
+-webkit-transition:all 1s ease-in-out;
+-o-transition:all 1s ease-in-out;
+-ms-transition:all 1s ease-in-out;
+transition:all 1s ease-in-out;
+
+-moz-animation:blink normal 0.5s infinite ease-in-out; /* Firefox */
+-webkit-animation:blink normal 0.5s infinite ease-in-out; /* Webkit */
+-ms-animation:blink normal 0.5s infinite ease-in-out; /* IE */
+animation:blink normal 0.5s infinite ease-in-out; /* Opera*/
+}​
+
+
+@-moz-keyframes blink {0%{opacity:1;} 50%{opacity:0;} 100%{opacity:1;}} /* Firefox */
+@-webkit-keyframes blink {0%{opacity:1;} 50%{opacity:0;} 100%{opacity:1;}} /* Webkit */
+@-ms-keyframes blink {0%{opacity:1;} 50%{opacity:0;} 100%{opacity:1;}} /* IE */
+@keyframes blink {0%{opacity:1;} 50%{opacity:0;} 100%{opacity:1;}} /* Opera */
+
+
+#secondPage{
+    opacity: 0;
+    width:100%;
+    height:100%;
+}
+
+footer {
+    width: 99%;
+    position: fixed;
+    bottom: 0;
+}
+
+
+#downloadMsg {
+    font-family:myFirstFont;
+    font-size: 32px; 
+    color:rgb(255,255,255);
+    background-color: rgb(33, 40, 56);
+    height: 30%;
+    text-align: center;
+}
+
+#fst{
+    overflow:hidden;
+	opacity:1;
+}
+@media only screen and (max-width: 960px){
+    #fst{
+        overflow-y:scroll;
+    }
+}
+	
+	
+
+#div1{
+      width:100%;height: 100%;
+   }
+
+#i1, #i5, #i6, #i9, #i10{height:100%;width:100%;}
+
+#i2{height:100%;width: 90%;z:-1;}
+
+#i3{height:100%;width:90%;}
+
+#i4{height:100%;width:90%;}
+
+#i7{height:73%;width:25%;z:-1;}
+
+#i8{height:50%;width:30%;}

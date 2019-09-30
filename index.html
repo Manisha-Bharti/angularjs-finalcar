@@ -1,3 +1,42 @@
 <div id="app">
   <div ng-controller="MainCtrl">
+	<div id="mainDiv" >
+			<div id="upperBanner" ng-style="{'height': upperBannerHeight}">
+				<div id="flexDiv" ng-style="{'padding-top': upChildTop}">
+					<img id="myImage3" src="Img/get_miles.png" ng-show="show1"/>
+					<div ng-style="{'padding-left': img1left, 'z-index': '1', 'padding-top':'250px', 'height': '100px', 'display': 'flex'}">
+						<img id="myImage1" src="Img/car.png">
+						<p id="message1"></p>
+						<img id="myImage2"  ng-show="show1"  src="Img/whilst_having_fun.png"/>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div ng-if="show3" id="lowerBanner" ng-style="{'height': lowerBannerHeight}">	
+				<p ng-show="show4" class='fade' ng-style="{'padding':msg2padding}">Find out how Yaars in Cars can help you with your daily commute.</p>	
+				<p ng-show="show5" class='fade'> Scroll down <span ng-style="{'float': 'right'}"><img id="arrow" class='fade' src="Img/scroll-down-arrow.png" style="width:5%;height:10%;"/></span>
+				</p>	
+			</div>
+		</div>
+		<div id="secondPage" >
+				<div id="div1" style=" margin-top:0px;">
+					<div style="padding-top: 170px; background-color: rgb(218, 247, 166); height: 50%;">
+						<img  src="Img/floor.png" style="margin:{{floor_top}} 0px 0px 0px; position:{{pos}};height:100%;width:100%;" />
+						<img id="i1" src="Img/table_vase.png" ng-style="{'margin-top':vase_top, 'margin-left':vase_pos}" />
+						<div><img  id="i2" src="Img/door.png" ng-style="{'margin-top':door_top, 'margin-left':door_pos}" /></div>
+						<div><img  id="i3" src="Img/window.png" style="margin:{{window_top}} 0px 0px 30px;" /></div>
+						<div><img  id="i4" src="Img/clock.png" style="margin:{{clock_top}} 0px 0px 0px;" /></div>
+						<div><img  id="i5" src="Img/shelf.png" style="margin:{{shelf_top}} 0px 0px 0px;" /></div>
+						<div><img  id="i6"src="Img/shelf2.png" style="margin:{{shelf_top}} 0px 0px 0px;"/> </div>
+						<div><img  id="i7" src="Img/character.png" ng-style="{'margin-top':char_top, 'margin-right':char_right, 'position':pos1, 'float' : 'right'}" /></div>
+						<div><img  id="i8" src="Img/bag2.png" ng-show="show" style="margin:{{bagtop}} 0px 0px -55px;" /></div>
+						<div><img  id="i9" src="Img/sofa.png" style="margin:{{sofa_top}} 0px 0px 0px;" /></div>
+						<div><img id="i10" src="Img/bag.png" style="margin:{{bag_top}} 0px 0px {{bag_left}};" /></div>
+					</div>
+					<div id="downloadMsg"><p style="padding-top: 70px;">Download Yaars in Caars in Now!!</p></div>
+				</div>
+			</div>
+  </div>
 </div>
+
+ 	<footer><img src="Img/social_bar.png" style="height: 100%;width:100%;"/></footer>  
